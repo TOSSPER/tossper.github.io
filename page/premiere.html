@@ -3,24 +3,39 @@
       <title>Premiere</title>
   </head>
   
-var xmlhttp = new XMLHttpRequest();
-xmlhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-        var myObj = this.responseText;
-        var jsonPretty = JSON.stringify(JSON.parse(myObj),null,2);
-        document.getElementById("demo").innerHTML = jsonPretty;
-    }
-};
-xmlhttp.open("GET", "https://api.blockcypher.com/v1/btc/main", true);
-xmlhttp.send();
-	
-
-<div class="row">
-	<div class="col-lg-12 col-xs-6">
-    	<pre>
-        	<code id="demo" class="json kljs"></code>
-    	</pre>
-	</div>
-</div>
+{
+    "is_a_recorded_user_url": true,
+    "is_an_active_user_account": true,
+    "user_url": "albincauderlier",
+    "is_user_profile_picture_set": true,
+    "user_profile_picture": "albincauderlier.png",
+    "user_name": "Albin CAUDERLIER",
+    "user_registration_date": "2015-08-04",
+    "user_facebook_url": "albincauderlier",
+    "user_twitter_url": "AlbinCAUDERLIER",
+    "user_linkedin_url": "albincauderlier",
+    "project_list": [
+        {
+            "project_id": "96",
+            "project_status": "20",
+            "project_url": "albin"
+        },
+        {
+            "project_id": "101",
+            "project_status": "20",
+            "project_url": "ytest1235654555555555555555555"
+        },
+        {
+            "project_id": "103",
+            "project_status": "20",
+            "project_url": "aaaaa"
+        },
+        {
+            "project_id": "104",
+            "project_status": "20",
+            "project_url": "test123"
+        }
+    ]
+}
 
 </html>
